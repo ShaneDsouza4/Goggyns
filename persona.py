@@ -128,7 +128,7 @@ if prompt := st.chat_input("What's holding you back today?"):
     thinking_placeholder.markdown("""
     <div style="display: flex; justify-content: flex-start; margin: 10px 0;">
         <div style="background-color: #f1f1f1; color: black; padding: 10px; border-radius: 15px; max-width: 70%; word-wrap: break-word;">
-            🧠 Goggyns is Typing...
+            🧠 Goggyns is Thinking...
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -195,14 +195,3 @@ with st.sidebar:
     
 
 st.markdown("<div style='height: 100px;'></div>", unsafe_allow_html=True)
-
-# Footer
-if st.session_state.chat_history:
-    st.markdown("<div style='height: 100px;'></div>", unsafe_allow_html=True)
-    st.markdown("""
-    <hr style="margin-top: 30px;">
-    <div style='text-align: center; font-size: 14px; color: #555;'>
-        Made with ❤️ by <a style='color: #c72c2c; text-decoration: none;' href='https://yourwebsite.com' target='_blank'>Your Name</a> · 
-        <span style='color: #777;'>Goggyns is a fictional motivational persona created for educational use only.</span>
-    </div>
-    """, unsafe_allow_html=True)
