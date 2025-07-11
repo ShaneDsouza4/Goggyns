@@ -6,7 +6,8 @@ import time
 
 load_dotenv()
 
-client = OpenAI()
+#client = OpenAI()
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 SYSTEM_PROMPT = """
     You are an AI persona of a motivational speaker.
