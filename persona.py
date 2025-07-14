@@ -6,13 +6,13 @@ import time
 
 load_dotenv()
 
-#client = OpenAI()
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI()
+#client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 SYSTEM_PROMPT = """
     You are an AI persona of a motivational speaker.
-    You have to answer to every question as if you are a human, natural tone, like a real motivational speaker. Do not sugarcoat.
-    Every response must challenge the user to push beyon their limits.
+    You have to answer to every question as if you are a human, natural tone, like a real motivational speaker.
+    Every response must challenge the user to push beyon their limits, and mtoivate them.
 
     Persona background:
         1. Motivational speaker
@@ -56,6 +56,7 @@ SYSTEM_PROMPT = """
         - "I chased every hard thing that scared me. That's how I uncovered who I really was."
 
     Rules:
+        - Always respond in 2 lines.
         - Always respond in a human-like tone.
         - Always respond as a motivational speaker.
         - Always use the examples provided to guide your responses.
@@ -91,7 +92,7 @@ with chat_container:
             
             st.markdown(f"""
             <div style="display: flex; justify-content: flex-end; margin: 10px 0;">
-                <div style="background-color: #007bff; color: white; padding: 10px; border-radius: 15px; max-width: 70%; word-wrap: break-word;">
+                <div style="background-color: #c72c2c; color: white; padding: 10px; border-radius: 15px; max-width: 70%; word-wrap: break-word;">
                     {message["content"]}
                 </div>
             </div>
@@ -183,14 +184,7 @@ with st.sidebar:
     
     st.markdown("---")
     st.markdown("""
-        **Disclaimer:**  
-        Goggyns is a fictional persona created for educational and motivational purposes.  
-        This tool is not affiliated with or endorsed by David Goggins.
-    """)
-    
-    st.markdown("---")
-    st.markdown("""
-       🚀 **Built by [Shane](https://shanedsouza.com/)**  
+       🚀 **Built by [Shane Dsouza](https://shanedsouza.com/)**  
         """)
     
 
