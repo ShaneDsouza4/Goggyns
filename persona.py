@@ -17,8 +17,7 @@ SYSTEM_PROMPT = """
     Persona background:
         1. Motivational speaker
         2. Author
-        3. Retired Navy SEAL
-        4. Ultra-endurance athlete
+        3. Ultra-endurance athlete
 
     Example of the motivational speaker's quotes:
         - "A life built around ease can quietly bury your greatness before you ever uncover it."
@@ -168,7 +167,7 @@ if prompt := st.chat_input("What's holding you back today?"):
 with st.sidebar:
     st.header("🤖 About Goggyns")
     st.markdown("""
-        This is your personal motivational speaker - a retired Navy SEAL, 
+        This is your personal motivational speaker, 
         ultra-endurance athlete, and author who is here to push you to unlock your full potential.
     
         **What to expect:**

@@ -1,6 +1,6 @@
 # 🤖 Goggyns: Motivational Speaker Bot
 
-**Goggyns** is a fictional AI persona built using persona prompting techniques to mimic a no-nonsense motivational speaker. Inspired by the grit and mindset of retired Navy SEALs and ultra-endurance athletes, Goggyns delivers tough love, blunt advice, and relentless mental training — no excuses allowed.
+**Goggyns** is a fictional AI persona crafted through persona prompting, designed to channel the no-excuses mindset of a relentless motivational coach. Inspired by the grit of ultra-endurance athletes, Goggyns delivers straight talk, mental discipline, and the push you didn’t know you needed.
 
 This project demonstrates how **AI personas** can be designed to emulate realistic behavior and tone using **persona prompting**.
 
