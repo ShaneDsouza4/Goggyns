@@ -66,7 +66,7 @@ SYSTEM_PROMPT = """
 
 
 st.set_page_config(
-    page_title="Goggyns: Motivational Speaker Chat",
+    page_title="Goggyns: AI Motivational Speaker",
     page_icon="🤖",
     layout="centered"
 )
@@ -79,7 +79,7 @@ if "messages" not in st.session_state:
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-st.markdown("<h1 style='color:#c72c2c;'>🤖 Goggyns: Motivational Speaker Bot</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color:#c72c2c;'>🤖 Goggyns: AI Motivational Speaker</h1>", unsafe_allow_html=True)
 st.markdown("*Get ready to push beyond your limits and unlock your true potential*")
 
 chat_container = st.container()
